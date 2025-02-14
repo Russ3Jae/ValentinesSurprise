@@ -66,6 +66,9 @@ function createEventListeners(container, button) {
 }
 
 function changeImage(imageName) {
-  return `<img src='./images/${imageName}.png' class=image>`
+    const img = document.createElement('img');
+    img.src = `./images/${imageName}.png`;
+    img.classList.add('image');
+    return img;
 }; 
 

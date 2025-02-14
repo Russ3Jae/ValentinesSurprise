@@ -41,7 +41,7 @@ function createEventListeners(container, button) {
     if (noCounter === 1) {
       textHolder.innerHTML ='wrong asnwer. Try again...'; 
       textHolderSecondary.innerHTML = ''; 
-      imageHolder.innerHTML = changeImage('kanye');
+      imageHolder.innerHTML = `<img src='./images/kanye.png' class=image>`
       yesButton.classList.add('no-counter-one');
       noButton.classList.add('no-counter-one');
     }
@@ -49,7 +49,7 @@ function createEventListeners(container, button) {
     else if (noCounter === 2) {
       textHolder.innerHTML ='Ima ask only one more time. Or I\'m gonna use dark psychology'; 
       textHolderSecondary.innerHTML='(brown tear runs down leg)'; 
-      imageHolder.innerHTML = changeImage('cringe');
+      imageHolder.innerHTML = `<img src='./images/cringe.png' class=image>`
       yesButton.classList.add('no-counter-two');
       noButton.classList.add('no-counter-two');
     }
@@ -57,7 +57,7 @@ function createEventListeners(container, button) {
     else if (noCounter === 3) {
       textHolder.innerHTML ='You\'re not sigma enough!!!'; 
       textHolderSecondary.innerHTML=''; 
-      imageHolder.innerHTML = changeImage('cringe2');
+      imageHolder.innerHTML = `<img src='./images/cringe2.png' class=image>`
       yesButton.classList.add('no-counter-three');
       noButton.remove()
     }
@@ -65,10 +65,8 @@ function createEventListeners(container, button) {
   })
 }
 
+/*
 function changeImage(imageName) {
-    const img = document.createElement('img');
-    img.src = `./images/${imageName}.png`;
-    img.classList.add('image');
-    return img;
+  return `<img src='./images/${imageName}.png' class=image>`
 }; 
-
+*/ 

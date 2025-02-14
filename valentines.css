@@ -1,0 +1,116 @@
+
+:root {
+  font-family: "Delius Unicase", serif;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+body {
+  margin: 0px; 
+}
+
+button {
+  font-family: "Delius Unicase", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgb(250, 224, 228);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.text-holder {
+  margin: 10px 15px; 
+  font-size: 25; 
+  display: flex;
+  align-items: space-between; 
+  justify-content: center;
+  height: 20px; 
+}
+
+.question-div {
+  width: 700px;
+  height: 100vh;  
+  background-color: rgb(247, 208, 213);
+  display: flex;
+  flex-direction: column; 
+  align-items: space-between;
+  justify-content: center;
+  border: 1px solid rgb(0, 0, 0); 
+}
+
+.image-holder {
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center;
+  align-content: center;
+  padding: 5px 10px; 
+  height: 300px;
+}
+
+.image-holder img {
+  width: 80%;
+}
+
+.question-holder {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  padding: 33px 0px; 
+}
+
+#yes button, #no button {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 8px; 
+  border: none; 
+  margin: 0px 15px;
+  box-shadow: 3px 6px 10px rgba(0,0,0,0.3)
+}
+
+#yes button:hover, #no button:hover {
+  opacity: 0.8; 
+}
+
+#yes button:active, #no button:active {
+  box-shadow: none; 
+}
+ 
+#yes button {
+  background-color: rgb(255, 174, 174); 
+}
+
+#no button {
+  background-color: rgb(255, 174, 174); 
+}
+
+#yes button.no-counter-one {
+  width: 300px; 
+}
+
+#no button.no-counter-one {
+  width: 100px; 
+}
+
+#yes button.no-counter-two {
+  width: 450px; 
+}
+
+#yes button.no-counter-three {
+  width: 600px; 
+}
+
+#no button.no-counter-two {
+  width: 50px; 
+}
+
+:disabled {
+  opacity: 0.9; 
+}
+ 
